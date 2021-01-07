@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{appendix}
+\usepackage{pdfpages}
+
+\title{VP141 Lab Report \\ \vspace{2em} Lab Number \\Your Lab Title}
+\author{
+    \begin{tabular}{lcc}
+    Professor:& Prof. Name\\
+    Author:& Your Name\\
+    Student Name:& Your Name & Partner Name\\
+    Student ID:& Your ID & Partner ID\\
+    Group:& 8\\
+    Lab Date:& 2020-11-27
+    \end{tabular}
+}
+\date{\today}
+
+\begin{document}
+    \begin{titlepage}
+        \maketitle
+        \begin{abstract}
+            Write your abstract here.
+        \end{abstract}
+    \end{titlepage}
+    \section{Introduction}
+    \section{Apparatus}
+    \section{Measurement Procedure}
+    \section{Results and Analysis}
+    %Adding Table
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ccc}%decide your column style here
+            \hline
+            A & B & C\\
+            \hline
+            12 & 34 & 56\\
+            \hline
+        \end{tabular}
+        %"3-line" tables are recommended
+        \caption{Values of ABC}
+    \end{table}
+    %Adding Figure
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{your_figure.jpg}
+        \caption{My Figure}
+    \end{figure}
+    \section{Conclusion and Significance}
+    %Attaching data sheet in appendix
+    \begin{appendices}
+        \section{Data Sheet}
+        %\includepdf[pages=-]{datasheet.pdf}
+    \end{appendices}
+\end{document}
